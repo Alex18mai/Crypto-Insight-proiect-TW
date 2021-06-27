@@ -1,0 +1,25 @@
+{
+  "name": "resurse",
+  "version": "1.0.0",
+  "description": "Crypto-Insight",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "blockchain"
+  ],
+  "author": "Alexandru Enache",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "pg": "^8.6.0",
+    "regex": "^0.1.1",
+    "sharp": "^0.28.3",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {}
+}
