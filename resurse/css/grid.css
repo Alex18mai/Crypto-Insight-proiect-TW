@@ -1,0 +1,64 @@
+main {
+    display: grid;
+    grid-template-areas:
+        "g1     g1     g1     g1"
+        "g1     g1     g1     g1"
+        "g1     g1     g1     g1"
+        "g3     g2     g2     g4"
+        "g5     g2     g2     g4"
+        "g5     g6     g6     g7"
+        "g8     g8     g8     g8"
+        ;
+
+    grid-gap: 2rem;
+}
+
+  
+#g1 {
+    grid-area: g1;
+    border: 2px dotted var(--colorNav);
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#g2 {
+    grid-area: g2;
+    border: 2px dotted var(--colorNav);
+    padding: 0.5rem;
+}
+
+#g3 {
+    grid-area: g3;
+    border: 2px dotted var(--colorNav);
+    padding: 0.5rem;
+}
+
+#g4 {
+    grid-area: g4;
+    border: 2px dotted var(--colorNav);
+    padding: 0.5rem;
+}
+
+#g5 {
+    grid-area: g5;
+    border: 2px dotted var(--colorNav);
+    padding: 0.5rem;
+}
+
+#g6 {
+    grid-area: g6;
+    border: 2px dotted var(--colorNav);
+    padding: 0.5rem;
+}
+
+#g7 {
+    grid-area: g7;
+    border: 2px dotted var(--colorNav);
+    padding: 0.5rem;
+}
+
+#g8 {
+    grid-area: g8;
+    border: 2px dotted var(--colorNav);
+    padding: 0.5rem;
+}

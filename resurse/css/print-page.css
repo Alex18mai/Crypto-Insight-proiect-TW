@@ -1,0 +1,86 @@
+@media print{
+
+
+    #banner
+    {
+        position:absolute;
+        top: 20px;
+       
+        
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+
+        border: 2px dotted black;
+    
+    }
+
+    img
+    {
+        display:none;
+    }
+
+    iframe
+    {
+        display:none;
+    }
+
+    figcaption
+    {
+        display:none;
+    }
+
+    #link-top
+    {
+        display:none;
+    }
+
+    a
+    {
+        color:var(--colorText);
+        text-decoration:none;
+      
+    }
+
+    h1
+    {
+        font-size:2.5em;
+        margin:auto;
+        text-align: center;
+        text-decoration: underline;
+        page-break-after: always;
+    }
+
+    nav
+    {
+        display:none;
+    }
+
+    footer
+    {
+        page-break-before: always;
+    }
+    
+    #watermark { 
+        position: fixed; bottom: 0; right: 0; 
+        display:block;
+
+        height:2cm;
+        width:100px;
+        border-style: double;
+        opacity: 0.65;
+    }
+
+    
+    
+}
+
+@page :left {
+    margin-left: 2.5cm;
+    margin-right:0.5cm;
+  }
+  
+@page :right {
+    margin-right: 2.5cm;
+    margin-left:0.5cm;
+  }

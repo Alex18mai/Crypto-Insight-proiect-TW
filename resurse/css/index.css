@@ -1,0 +1,83 @@
+@import "colorScheme.css";
+
+html {
+
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    color: var(--colorText);
+}
+
+body {
+
+    background: var(--colorBg);
+    background-size: cover;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+}
+
+a{
+	color: var(--colorA);
+}
+
+h1, h2, h3{
+    color : var(--colorA);
+}
+
+#homeLink{
+	max-width:300px;
+    width:100%;
+}
+
+iframe{
+    max-width:550px;
+    width:100%;
+}
+
+#watermark
+{
+    display:none;
+}
+
+
+
+
+body.dark{
+    
+    background: black;
+}
+body.light{
+    
+    background: var(--colorBg);
+}
+
+#schimbare-tema
+{
+    width: 3em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#schimbare-tema.light
+{
+    background:black;
+    color:white;
+}
+
+#schimbare-tema.dark
+{
+    background:white;
+    color:black;
+}
+
+
+.dark>#butonsoare
+{
+    display:none;
+}
+
+.light>#butonluna
+{
+    display:none;
+}

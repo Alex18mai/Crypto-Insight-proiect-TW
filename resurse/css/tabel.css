@@ -1,0 +1,49 @@
+#Evenimente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:black;
+    padding-bottom: 1rem;
+    counter-reset: cnt;
+}
+
+#tabel {
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.col-title {
+    background-image: linear-gradient(var(--colorBanner), var(--colorA), var(--colorBanner));
+}
+
+.odd-col {
+    background: lightyellow;
+}
+
+.even-col {
+    background: lightblue;
+}
+
+td, th {
+    border-left: solid black 1px;
+    border-top: solid black 1px;
+}
+
+th {
+    background-color: var(--colorNav);
+}
+
+td{
+    counter-increment: cnt;
+}
+
+#div-tabel {
+    overflow-x: auto;
+    max-width: 20rem;
+}
+
+.actualTableRow:hover td {
+    background: var(--colorNavHover);
+    color:var(--colorText);
+}

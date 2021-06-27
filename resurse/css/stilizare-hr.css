@@ -1,0 +1,36 @@
+/*
+hr {
+    height: 5px;
+
+    background-image: linear-gradient(red, green, blue);
+
+}
+
+hr:before {
+    content: '';
+    border-radius: 100%;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-image: radial-gradient(red, green, blue);
+    left: 50%;
+    margin: -10px;
+    box-shadow: inherit
+}*/
+
+
+hr {
+    margin-top:1rem;
+    height:2rem;
+    width:100%;
+    border: 0;
+    
+    background-image: radial-gradient(circle at 50% 50%, transparent 10%, var(--colorNav) 20%, transparent 25%),
+                      radial-gradient(circle at 40% 60%, transparent 5%, var(--colorText) 10%, transparent 15%),
+                      radial-gradient(circle at 60% 30%, transparent 10%, var(--colorA) 20%, transparent 25%);
+    background-size: 15px;
+    background-repeat:repeat-x, space;
+    
+    -webkit-mask-image: linear-gradient(to left,transparent, black 5%, black 95%, transparent);
+    mask-image: linear-gradient(to left,transparent, black 5%, black 95%, transparent);
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html  lang="ro">
+    <head>
+        <meta name="keywords" content="cryptocurrency, blockchain, Bitcoin, Ethereum, Cardano">
+        <meta name="description" content="Website pentru vizualizarea preturilor, stririlor si portofoliului de cryptocurrency.">
+        <title>Crypto Insight - home</title>  
+		<%- include("../fragmente/head") %>
+        <link rel="stylesheet" href="/resurse/css/produse.css" type="text/css">
+    </head>
+
+    <%- include("../fragmente/header") %>
+
+    <body>
+
+    <main>
+        
+        <section id="produse">
+            <h2>Produse</h2>
+            <article class="produs <%- prod.tip_produs%>">
+                <h3 class="nume">Nume: <a href="/produs/<%-prod.id %>" ><span class="val-nume"><%- prod.nume%></span></a></h3>
+                <div class="div_produs">
+                    <div>
+                        <% 
+                        var days=["Duminica","Luni","Marti","Miercuri","Joi","Vineri","Sambata"];
+                        var months=["Ianuarie","Februarie","Martie","Aprilie","Mai","Iunie","Iulie","August","Septembrie","Octombrie","Noiembrie","Decembrie"];
+                        var currentDay= prod.data_adaugare;
+                        let day=currentDay.getDay();
+                        let afis=currentDay.getDate().toString(10).concat(' ').concat(months[currentDay.getMonth()]).concat(" ").concat(currentDay.getFullYear().toString(10)).concat(" [").concat(days[day]).concat("]"); 
+                        %>
+                        <figure>
+                            <img src="/resurse/galerie/<%- prod.imagine %>" style="width:50%;height:auto;" alt="[imagine <%- prod.nume %>]" />
+                        </figure>
+                        <p class="pret">Pret: <span class="val-pret"><%- prod.pret%></span></p>
+                        <p class="parere">Parere: <span class="val-parere"><%- prod.parere%></span></p>
+                        <p class="pareri_trecute">Pareri Trecute: <span class="val-pareri_trecute"><%- prod.pareri_trecute%></span></p>
+                        <p class="data_adaugare">Data Adaugare: <time class="val-data_adaugare"><%- afis    %></time></p>
+                        <p class="investitie_buna">Investitie Buna: <span class="val-investitie_buna"><%- prod.investitie_buna%></span></p>
+                        
+                    </div>
+                    <div>
+                        <p class="tip_produs">Tip:<span class="val-tip_produs"><%- prod.tip_produs%></span></p>
+                        <p class="categorie">Categorie:<span class="val-categorie"><%- prod.categorie%></span></p>
+                        <p class="descriere">Descriere:<span class="val-descriere"><%- prod.descriere%></span></p>
+                        <p class="id">Id:<span class="val-id">artc-<%- prod.id%></span></p>
+                    </div>
+                </div>
+                
+                
+            </article>
+        </section>
+
+    </main>
+
+    <%- include("../fragmente/footer") %>
+    </body>
+</html>

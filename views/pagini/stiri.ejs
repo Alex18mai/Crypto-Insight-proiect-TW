@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html  lang="ro">
+    <head>
+        <meta name="keywords" content="cryptocurrency, blockchain, Bitcoin, Ethereum, Cardano">
+        <meta name="description" content="Website pentru vizualizarea preturilor, stririlor si portofoliului de cryptocurrency.">
+        <title>Crypto Insight - home</title>  
+
+        <%- include("../fragmente/head") %>     
+
+        <% if (locals.animLimit==4){ %>
+            <link rel="stylesheet" href="/resurse/css/galerie-anim2x2.css" type="text/css" />
+        <% }%>
+        <% if (locals.animLimit==9){ %>
+            <link rel="stylesheet" href="/resurse/css/galerie-anim3x3.css" type="text/css" />
+        <% }%>
+        <% if (locals.animLimit==16){ %>
+            <link rel="stylesheet" href="/resurse/css/galerie-anim4x4.css" type="text/css" />
+        <% }%>
+
+    </head>
+
+    <%- include("../fragmente/header") %>
+
+    
+    <body>
+
+    <main>
+        
+        <%- include("../fragmente/galerie-animata") %>
+
+    </main>
+
+    <%- include("../fragmente/footer") %>
+    </body>
+</html>

@@ -1,0 +1,307 @@
+#sectiune-galerie-animata {
+  width: 1200px;
+  height: 1200px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid black;
+  margin-bottom: 5rem;
+}
+
+#galerie-animata {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "anim1 anim2 anim3" "anim4 anim5 anim6" "anim7 anim8 anim9";
+  position: absolute;
+  -webkit-animation-name: galerie3x3;
+          animation-name: galerie3x3;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 36s;
+          animation-duration: 36s;
+}
+
+#galerie-animata figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  text-align: center;
+}
+
+#galerie-animata figure {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-animation-name: mic_mare;
+          animation-name: mic_mare;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+#galerie-animata img {
+  height: 100%;
+}
+
+anim1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: anim1;
+}
+
+anim2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: anim2;
+}
+
+anim3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: anim3;
+}
+
+anim4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: anim4;
+}
+
+anim5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: anim5;
+}
+
+anim6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: anim6;
+}
+
+anim7 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: anim7;
+}
+
+anim8 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: anim8;
+}
+
+anim9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: anim9;
+}
+
+@-webkit-keyframes mic_mare {
+  0% {
+    width: 400px;
+    height: 400px;
+  }
+  50% {
+    width: 1200px;
+    height: 1200px;
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@keyframes mic_mare {
+  0% {
+    width: 400px;
+    height: 400px;
+  }
+  50% {
+    width: 1200px;
+    height: 1200px;
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@-webkit-keyframes galerie3x3 {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  5.55556% {
+    top: 0px;
+    left: 0px;
+  }
+  11.1111% {
+    top: 0px;
+    left: 0px;
+  }
+  16.6667% {
+    top: 0px;
+    left: -2400px;
+  }
+  22.2222% {
+    top: 0px;
+    left: 0px;
+  }
+  27.7778% {
+    top: 0px;
+    left: -1200px;
+  }
+  33.3333% {
+    top: 0px;
+    left: 0px;
+  }
+  38.8889% {
+    top: -2400px;
+    left: 0px;
+  }
+  44.4444% {
+    top: 0px;
+    left: 0px;
+  }
+  50% {
+    top: -1200px;
+    left: 0px;
+  }
+  55.5556% {
+    top: 0px;
+    left: 0px;
+  }
+  61.1111% {
+    top: -1200px;
+    left: -1200px;
+  }
+  66.6667% {
+    top: 0px;
+    left: 0px;
+  }
+  72.2222% {
+    top: -2400px;
+    left: -2400px;
+  }
+  77.7778% {
+    top: 0px;
+    left: 0px;
+  }
+  83.3333% {
+    top: -2400px;
+    left: -1200px;
+  }
+  88.8889% {
+    top: 0px;
+    left: 0px;
+  }
+  94.4444% {
+    top: -1200px;
+    left: -2400px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+
+@keyframes galerie3x3 {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  5.55556% {
+    top: 0px;
+    left: 0px;
+  }
+  11.1111% {
+    top: 0px;
+    left: 0px;
+  }
+  16.6667% {
+    top: 0px;
+    left: -2400px;
+  }
+  22.2222% {
+    top: 0px;
+    left: 0px;
+  }
+  27.7778% {
+    top: 0px;
+    left: -1200px;
+  }
+  33.3333% {
+    top: 0px;
+    left: 0px;
+  }
+  38.8889% {
+    top: -2400px;
+    left: 0px;
+  }
+  44.4444% {
+    top: 0px;
+    left: 0px;
+  }
+  50% {
+    top: -1200px;
+    left: 0px;
+  }
+  55.5556% {
+    top: 0px;
+    left: 0px;
+  }
+  61.1111% {
+    top: -1200px;
+    left: -1200px;
+  }
+  66.6667% {
+    top: 0px;
+    left: 0px;
+  }
+  72.2222% {
+    top: -2400px;
+    left: -2400px;
+  }
+  77.7778% {
+    top: 0px;
+    left: 0px;
+  }
+  83.3333% {
+    top: -2400px;
+    left: -1200px;
+  }
+  88.8889% {
+    top: 0px;
+    left: 0px;
+  }
+  94.4444% {
+    top: -1200px;
+    left: -2400px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #sectiune-galerie-animata {
+    display: none;
+  }
+}
+
+#sectiune-galerie-animata:hover * {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+/*# sourceMappingURL=galerie-anim3x3.css.map */

@@ -1,0 +1,101 @@
+main{
+    display: flex;
+    flex-direction: column;
+    --padd-main:1rem;
+    padding-left:var(--padd-main);
+    padding-right:var(--padd-main);
+}
+
+.produs{
+    border: 2px black dotted;
+    padding: 0.5rem;
+}
+
+.div_produs{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.div_produs div{
+    max-width: 400px;
+}
+
+.div_produs span{
+    color: var(--colorA);
+}
+
+.grid-produse{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1rem;
+}
+.grid-produse .produs{
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 0.8rem 0.3rem grey;
+}
+
+.grid-produse .produs h3{
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.grid-produse .produs h3 a:hover{
+    color:white;
+}
+.grid-produse .produs figure img{
+    border:1px solid grey
+}
+
+#filtre{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.ceva
+{
+    display:flex;
+    flex-direction: row;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.ceva label
+{
+    margin-right: 2rem;
+}
+
+.group_check{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.selectati{
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.radiobutton
+{
+    display:flex;
+    flex-direction: row;
+}
+
+.hidden
+{
+    display:none;
+}
+
+.hiddenact
+{
+    display:none;
+}
+

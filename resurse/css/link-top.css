@@ -1,0 +1,38 @@
+#link-top {
+    position: fixed;
+    display: block;
+
+    opacity: 0.5;
+    bottom: 10px;
+    right: 10px;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: var(--colorNav);
+
+    border-radius: 50%;
+
+    border: 1px solid var(--colorA);
+    box-shadow: 0px 0px 10px 10px var(--colorNav);
+
+
+    transition: opacity 0.5s linear;
+}
+
+#triunghi {
+    position: absolute center;   
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#link-top:hover {
+    background-color: var(--colorNav);
+    opacity: 1;
+}
+
+#link-top:hover .triunghi {
+    opacity: 1;
+}

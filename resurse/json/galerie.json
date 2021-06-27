@@ -1,0 +1,102 @@
+{
+	"cale_galerie":"resurse/galerie",
+	"imagini": [
+		
+        {
+            "cale_imagine":"binance-coin.png",
+            "titlu":"Binance Coin",
+            "descriere":"Binance Coin",
+            "timp":"08:00-14:00"
+        },
+        {
+            "cale_imagine":"bitcoin.png",
+            "titlu":"Bitcoin",
+            "descriere":"Bitcoin",
+            "timp":"10:00-19:00"
+        },
+        {
+            "cale_imagine":"bitcoin-cash.png",
+            "titlu":"Bitcoin Cash",
+            "descriere":"Bitcoin Cash",
+            "timp":"09:00-11:00"
+        },
+        {
+            "cale_imagine":"cardano.png",
+            "titlu":"Cardano",
+            "descriere":"Cardano",
+            "timp":"13:00-20:00"
+        },
+        {
+            "cale_imagine":"chainlink.png",
+            "titlu":"Chainlink",
+            "descriere":"Chainlink",
+            "timp":"00:00-23:00"
+        },
+        {
+            "cale_imagine":"dogecoin.png",
+            "titlu":"Dogecoin",
+            "descriere":"Dogecoin",
+            "timp":"01:00-24:00"
+        },
+        {
+            "cale_imagine":"ethereum.png",
+            "titlu":"Ethereum",
+            "descriere":"Ethereum",
+            "timp":"00:00-24:00"
+        },
+        {
+            "cale_imagine":"litecoin.png",
+            "titlu":"Litecoin",
+            "descriere":"Litecoin",
+            "timp":"00:00-24:00"
+        },
+        {
+            "cale_imagine":"polkadot.png",
+            "titlu":"Polkadot",
+            "descriere":"Polkadot",
+            "timp":"00:00-24:00"
+        },
+        {
+            "cale_imagine":"stellar.png",
+            "titlu":"Stellar",
+            "descriere":"Stellar",
+            "timp":"00:00-24:00"
+        },
+        {
+            "cale_imagine":"tether.png",
+            "titlu":"Tether",
+            "descriere":"Tether",
+            "timp":"00:00-24:00"
+        },
+        {
+            "cale_imagine":"theta.png",
+            "titlu":"Theta",
+            "descriere":"Theta",
+            "timp":"00:00-24:00"
+        },
+        {
+            "cale_imagine":"uniswap.png",
+            "titlu":"Uniswap",
+            "descriere":"Uniswap",
+            "timp":"00:00-24:00"
+        },
+        {
+            "cale_imagine":"usd-coin.png",
+            "titlu":"Usd Coin",
+            "descriere":"Usd Coin",
+            "timp":"00:00-24:00"
+        },
+        {
+            "cale_imagine":"wrapped-bitcoin.png",
+            "titlu":"Wrapped Bitcoin",
+            "descriere":"Wrapped Bitcoin",
+            "timp":"00:00-24:00"
+        },
+        {
+            "cale_imagine":"xrp.png",
+            "titlu":"Xrp",
+            "descriere":"Xrp",
+            "timp":"00:00-24:00"
+        }
+	]
+}

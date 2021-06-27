@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta name="keywords" content="cryptocurrency, blockchain, Bitcoin, Ethereum, Cardano">
+    <meta name="description"
+        content="Website pentru vizualizarea preturilor, stririlor si portofoliului de cryptocurrency.">
+    <title>Crypto Insight - home</title>
+    <%- include("../fragmente/head") %>
+    <link rel="stylesheet" href="/resurse/css/produse.css" type="text/css">
+    <script src="/resurse/js/produse.js"></script>
+</head>
+
+<%- include("../fragmente/header") %>
+
+    <body>
+
+        <main>
+            <div id="filtre">
+                <div class="ceva">
+                    <label> Pret maxim: <input type="number" id="inp-pret" value="300"></label>
+
+                    <label> Rating minim: <input type="range" id="inp-rating" value="0" min="0" max="10"
+                            oninput="this.nextElementSibling.value = this.value"> <output>0</output></label>
+                    <label> Select simplu:
+                        <select id="inp-categorie">
+                            <option value="toate">toate</option>
+                            <option value="store of value">store of value</option>
+                            <option value="security">security</option>
+                            <option value="testchain">testchain</option>
+                            <option value="meme">meme</option>
+                        </select>
+                    </label>
+
+                    <label>Nume: <input type="text" id="input-nume" value=""></label>
+                </div>
+
+                <div class="ceva">
+                    <label for="textarea">Introduceti parere:</label>
+                    <textarea id="input-parere" name="textarea" rows="4" cols="50"></textarea>
+                </div>
+
+                <label class="ceva"> Selectati interesele dumneavoastra:
+
+                    <select id="inp-multiplu" multiple>
+                        <option value="store of value">store of value</option>
+                        <option value="security">security</option>
+                        <option value="testchain">testchain</option>
+                        <option value="meme">meme</option>
+                    </select>
+                </label>
+
+
+                <p class="selectati">Selectati tipul de moneda care va pasioneaza: </p>
+
+                <div class="group_check">
+
+
+                    <div class="check">
+                        <input type="checkbox" id="moneda1" name="Bitcoin" value="Bitcoin">
+                        <label for="moneda1"> Bitcoin</label><br>
+
+                        <p>Bitcoin?</p>
+
+                        <div class="Bitcoin">
+                            <div class="radiobutton">
+                                <input type="radio" id="da" name="radio1" value="da">
+                                <label for="treid">Da</label><br>
+                            </div>
+
+                            <div class="radiobutton">
+                                <input type="radio" id="nu" name="radio1" value="nu">
+                                <label for="clasic">Nu</label><br>
+                            </div>
+
+
+                            <div class="radiobutton">
+                                <input type="radio" class="oricare" id="oricare" name="radio1" value="oricare" checked>
+                                <label for="oricare">Nu ma prea intereseaza</label><br>
+                            </div>
+                        </div>
+
+                        <p>Bitcoin Cash?</p>
+
+                        <div class="Bitcoin">
+                            <div class="radiobutton">
+                                <input type="radio" id="da" name="radio2" value="da">
+                                <label for="treid">Da</label><br>
+                            </div>
+
+                            <div class="radiobutton">
+                                <input type="radio" id="nu" name="radio2" value="nu">
+                                <label for="clasic">Nu</label><br>
+                            </div>
+
+
+                            <div class="radiobutton">
+                                <input type="radio" class="oricare" id="oricare" name="radio2" value="oricare" checked>
+                                <label for="oricare">Nu ma prea intereseaza</label><br>
+                            </div>
+                        </div>
+
+                        <p>Wrapped Bitcoin?</p>
+
+                        <div class="Bitcoin">
+                            <div class="radiobutton">
+                                <input type="radio" id="da" name="radio3" value="da">
+                                <label for="treid">Da</label><br>
+                            </div>
+
+                            <div class="radiobutton">
+                                <input type="radio" id="nu" name="radio3" value="nu">
+                                <label for="clasic">Nu</label><br>
+                            </div>
+
+
+                            <div class="radiobutton">
+                                <input type="radio" class="oricare" id="oricare" name="radio3" value="oricare" checked>
+                                <label for="oricare">Nu ma prea intereseaza</label><br>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="check">
+                        <input type="checkbox" id="moneda2" name="Altcoin" value="Altcoin">
+                        <label for="moneda2"> Altcoin</label><br>
+
+                        <p>Ethereum?</p>
+                        <div class="Altcoin">
+                            <div class="radiobutton">
+                                <input type="radio" id="da" name="radio4" value="da">
+                                <label for="treid">Da</label><br>
+                            </div>
+
+                            <div class="radiobutton">
+                                <input type="radio" id="nu" name="radio4" value="nu">
+                                <label for="clasic">Nu</label><br>
+                            </div>
+
+
+                            <div class="radiobutton">
+                                <input type="radio" class="oricare" id="oricare" name="radio4" value="oricare" checked>
+                                <label for="oricare">Nu ma prea intereseaza</label><br>
+                            </div>
+                        </div>
+
+                        <p>Cardano?</p>
+                        <div class="Altcoin">
+                            <div class="radiobutton">
+                                <input type="radio" id="da" name="radio5" value="da">
+                                <label for="treid">Da</label><br>
+                            </div>
+
+                            <div class="radiobutton">
+                                <input type="radio" id="nu" name="radio5" value="nu">
+                                <label for="clasic">Nu</label><br>
+                            </div>
+
+
+                            <div class="radiobutton">
+                                <input type="radio" class="oricare" id="oricare" name="radio5" value="oricare" checked>
+                                <label for="oricare">Nu ma prea intereseaza</label><br>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+                <p>
+                    <button id="filtrare">Filtreaza</button>
+                    <button id="sortCrescNume">Sorteaza crescator dupa pret si categorie</button>
+                    <button id="sortDescrescNume">Sorteaza descrescator dupa pret si categorie</button>
+                    <button id="resetare">Reseteaza</button>
+                    <button id="suma">Afiseaza suma preturilor</button>
+                </p>
+
+                <div>
+                    <p id="p-suma"></p>
+                </div>
+
+            </div>
+
+
+            <section id="produse">
+                <h2>Produse</h2>
+                <div class="grid-produse">
+                    <% for( let prod of locals.produse) { %>
+                        <article class="produs" id="artc-<%- prod.id%>">
+                            <h3 class="nume">Nume: <a href="/produs/<%-prod.id %>"><span class="val-nume"><%- prod.nume%></span></a></h3>
+                            <div class="div_produs">
+                                <div>
+                                    <% var days=["Duminica","Luni","Marti","Miercuri","Joi","Vineri","Sambata"]; var
+                                        months=["Ianuarie","Februarie","Martie","Aprilie","Mai","Iunie","Iulie","August","Septembrie","Octombrie","Noiembrie","Decembrie"];
+                                        var currentDay=prod.data_adaugare; let day=currentDay.getDay(); let
+                                        afis=currentDay.getDate().toString(10).concat(' ').concat(months[currentDay.getMonth()]).concat(" ").concat(currentDay.getFullYear().toString(10)).concat(" [").concat(days[day]).concat("]"); 
+                                %>
+                                <figure>
+                                    <img src="/resurse/galerie/<%- prod.imagine %>" style="width:50%;height:auto;" alt="[imagine <%- prod.nume %>]" />
+                                </figure>
+                                <p class="pret">Pret: <span class="val-pret"><%- prod.pret%></span></p>
+                                <p class="parere">Parere: <span class="val-parere"><%- prod.parere%></span></p>
+                                <p class="pareri_trecute">Pareri Trecute: <span class="val-pareri_trecute"><%- prod.pareri_trecute%></span></p>
+                                <p class="data_adaugare">Data Adaugare: <time class="val-data_adaugare"><%- afis    %></time></p>
+                                <p class="investitie_buna">Investitie Buna: <span class="val-investitie_buna"><%- prod.investitie_buna%></span></p>
+                                <p class="rating">Rating: <span class="val-rating"><%- prod.rating%></span></p>
+                                
+                            </div>
+                            <div>
+                                <p class="tip_produs">Tip:<span class="val-tip_produs"><%- prod.tip_produs%></span></p>
+                                <p class="categorie">Categorie:<span class="val-categorie"><%- prod.categorie%></span></p>
+                                <p class="descriere">Descriere:<span class="val-descriere"><%- prod.descriere%></span></p>
+                                <p class="id">Id:<span class="val-id">artc-<%- prod.id%></span></p>
+                            </div>
+                        </div>
+                        
+                        
+                    </article>
+                <% }%>
+        </section>
+    </div>
+    </main>
+
+    <%- include("../fragmente/footer") %>
+    </body>
+</html>

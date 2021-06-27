@@ -1,0 +1,29 @@
+<section id="sectiune-galerie-statica"> 
+    <h2>Galerie statica</h2>
+
+    <div id="galerie-statica">
+        
+        <%locals.imageCounter=0;%>
+        <% for (let imag of locals.imagini){  %>
+            <% if (locals.imageCounter==10){ %>
+                <% break; %>
+            <% }%>
+            <% if (locals.timpCurent >= imag.inceput && locals.timpCurent <= imag.final) %>
+                <% { locals.imageCounter+=1;%>
+                <section id=<%- "im".concat(locals.imageCounter.toString(10)); %> >
+                <%console.log("im"+locals.imageCounter.toString(10))%>
+                    <figure>
+                        <picture>
+                            <!-- il ia pe primul care se potriveste cu query-ul din media-->
+                            <source srcset="/<%-imag.mic%>" media="(max-width:700px)"/>
+                            <source srcset="/<%-imag.mediu%>" media="(max-width:1000px)"/>
+                            <img src="/<%-imag.mare%>" alt="text"/>
+                        </picture>
+                    <figcaption><%-imag.descriere%></figcaption>
+                    </figure>
+                </section>
+                <%}%>
+        <% } %>
+        
+    </div>
+</section>

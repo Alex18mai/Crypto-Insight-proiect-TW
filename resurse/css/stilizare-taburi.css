@@ -1,0 +1,38 @@
+
+.cardano-iframe {
+    display: flex;
+    flex-direction: row;
+}
+
+.taburi-iframe a {
+    text-decoration: none;
+    width: 100px;
+
+    display: inline-block;
+    border: 1px solid white;
+
+    border-left: none;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: var(--colorNav);
+    color: var(--colorText);
+    transition: all 0.5s linear;
+    text-align: center;
+
+    
+}
+
+.taburi-iframe a+a {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+}
+
+.taburi-iframe a:hover {
+    color: white;
+
+    background-color: var(--colorNavHover);
+    
+    width: 150px;
+}
