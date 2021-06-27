@@ -1,0 +1,130 @@
+#include <fstream>
+#include <vector>
+#include <random>
+
+using namespace std;
+
+ofstream cout("output");
+
+
+void afis(string a) {
+    cout << '\'';
+    cout << a;
+    cout << '\'';
+}
+
+int RNG(int st, int dr) {
+    int nr = rand();
+    nr %= (dr - st + 1);
+    nr += st;
+    return nr;
+}
+
+int main()
+{
+
+
+    vector < vector < string > > v = {
+        {"Binance Coin", "binance-coin.png"},
+        {"Bitcoin", "bitcoin.png"},
+        {"Bitcoin Cash", "bitcoin-cash.png"},
+        {"Cardano", "cardano.png"},
+        {"Chainlink", "chainlink.png"},
+        {"Dogecoin", "dogecoin.png"},
+        {"Ethereum", "ethereum.png"},
+        {"Litecoin", "litecoin.png"},
+        {"Polkadot", "polkadot.png"},
+        {"Stellar", "stellar.png"},
+        {"Tether", "tether.png"},
+        {"Theta", "theta.png"},
+        {"Uniswap", "uniswap.png"},
+        {"Usd Coin", "usd-coin.png"},
+        {"Wrapped Bitcoin", "wrapped-bitcoin.png"},
+        {"Xrp", "xrp.png"}
+    };
+
+    vector < string > categ = {"store of value", "security", "testchain", "meme"};
+    vector < string > tip = { "DeFi", "Storage", "Innovation", "Stable" };
+    vector < string > parere = { "bun", "rau", "mediu" };
+    vector < string > investitie = { "False", "True" };
+
+
+    for (auto& x : v) {
+
+        cout << '(';
+        
+        //nume
+        afis(x[0]);
+        cout << ',';
+
+
+        //descriere
+        afis(x[0]);
+        cout << ',';
+
+        //pret
+        cout << RNG(1, 100);
+        cout << ',';
+
+
+        //popularitate
+        cout << RNG(1, 10);
+        cout << ',';
+
+
+        //rating
+        cout << RNG(1, 10);
+        cout << ',';
+
+
+        //tip_produs
+        afis(tip[RNG(0, tip.size() - 1)]);
+        cout << ',';
+
+
+        //categorie
+        afis(categ[RNG(0, categ.size() - 1)]);
+        cout << ',';
+
+        //parere
+        afis(parere[RNG(0, parere.size() - 1)]);
+        cout << ',';
+
+        //pareri_trecute
+        int n = RNG(1, 3);
+        cout << '\'';
+        cout << '{';
+        for (int i = 1; i <= n; i++) {
+            cout << '\"';
+            cout << parere[RNG(0, parere.size() - 1)];
+            cout << '\"';
+
+            if (i < n) {
+                cout << ',';
+            }
+        }
+        cout << '}';
+        cout << '\'';
+        cout << ',';
+
+        //investitie_buna
+        cout << investitie[RNG(0, investitie.size() - 1)];
+        cout << ',';
+
+        //imagine
+        afis(x[1]);
+
+
+        cout << ')';
+        cout << ',' << '\n';
+    }
+
+
+
+    return 0;
+}
+
+
+
+
+
